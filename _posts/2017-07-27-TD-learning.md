@@ -1,39 +1,55 @@
 ---
 layout: post
 title:  TD Series (1)
+feature-img: "img/sample_feature_img.png"
 ---
-# Understanding TD Learning
-
-<div align=center>
-<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning/header.png" width="4000" height="700" />
-</div>
-
+# Understading TD Learning I: Intuition
 
 ## Introduction
-**TD (temporal difference) Learning** is by far the most fascinating and successful Reinforcement Learning algorithm. It bridges the gap between the traditional trial-error methods and some advanced ideas like **Emphasis** and **Eligibility Traces**. However, the mechanism behind the scene have often been neglected since people tend to focus on the specific implementations of this idea, like **Sarsa** and **Q-Learning**. This blog post tends to explain the TD idea more intuitively. There are also many paper and surveys about TD Learning for further readings.(**here is the references**)
+**TD (temporal difference) Learning** is by far the most fascinating and successful Reinforcement Learning algorithm. It bridges the gap between the traditional trial-error methods and some advanced ideas like **Emphasis** [2] and **Eligibility Traces** [1]. However, the mechanism behind the scene have often been neglected since people tend to focus on the specific implementations of this idea, like **Sarsa** and **Q-Learning** [1]. This blog post tends to explain the TD idea more intuitively.
+
+## What's TD Learning?
+To understand TD learning more intuitively, here's a classic example to illustrate how TD Learning works in our daily life.
+
+<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning/header.png" width="4000" height="500" />
+
+> <center> <small>Figure 1: driving home example by Monte Carlo methods
+(left) and TD methods (right).[1]</small></center>
+
+- Setting: We are driving home from work.
+- Goal: Estimate how long it will take to get home.
+- Action: Drive.
+- Transition: All things can happen to us during driving.
+- Reward: Elapsed time.
+- Return: Actual time to go.
+- Value of states: Expected time to go.
+- The x-axis represents the time step and events, the y-axis is the predicted total time to go home.
+- On the left is MC method and on the right is TD method.
+
+As we can see, when we update the value of each state, MC method will have to wait till the end to do the update; it's like our original prediction to go home is 30 minutes, then we caught in a traffic jam on road at 6:00 p.m., but we don't change our estimate untill we get home at 8:00 p.m.. Not until then can we realize that getting caught in a traffic jam is not good.
+
+<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning/traffic.jpg" width="2000" height="700" />
+
+It may sound foolish but that's what MC method does. On the contrary, TD method is more "human-like": When we get caught in a traffic jam at 6:00 p.m., we will immediately realize that our original estimate (30 mins to go home) is too optimistic, because 6:00 p.m. is the evening rush hour and we will probably run into traffic jam. So we can update our state value right away rather than wait until we get home.
 
 ## Why TD Learning?
-For those who have basic knowledge of RL, **Dynamic Programming (DP)** and **Monte Carlo Learning (MC)**  should be no strangers. Dynamic Programming assumes the MDP of the environment is known and do bootstrapping to iteratively update its estimates.
+Now we know why it's named Temporal-Difference Learning: It uses the difference between time steps to update its estimate rather than use the actual return, which can only be acquire in the end.
 
-Monte Carlo Learning is more like a trial-error method where the agent learns from raw experience(sample).  
+The example above explains the main idea of TD Learning: Sample and Bootstrap. Like Monte Carlo
+methods, TD methods can learn directly from raw experience; Also like Dynamic Programming, TD methods update estimates based in part on other learned estimates, without waiting for a final outcome.
 
-TD learning is a combination
-of Monte Carlo ideas and dynamic programming (DP) ideas.
+In short, TD Learning is a combination of Monte Carlo Learning and Dynamic Programming.
 
-Like Monte Carlo
-methods, TD methods can learn directly from raw experience without a model of
-the environment’s dynamics. Also like DP, TD methods update estimates based in part
-on other learned estimates, without waiting for a final outcome (they bootstrap).
+<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning/TD_structure.png" width="4000" height="500" />
 
-Obviously, TD methods have an advantage over DP methods in that they do
-not require a model of the environment, of its reward and next-state probability
-distributions.
+> <center> <small> Figure 2: TD Learning illustration: Sample and Bootstrap [3] </small> </center>
 
-The next most obvious advantage of TD methods over Monte Carlo methods is
-that they are naturally implemented in an on-line, fully incremental fashion.
+## How to implement TD Learning?
+Mathematical analysis and specific control algorithms, like Sarsa, Q-learing and expected Sarsa will be discussed in next post.
 
-TD(λ) improves over the off-line λ-return algorithm in three ways. First it updates
-the weight vector on every step of an episode rather than only at the end, and thus
-its estimates may be better sooner. Second, its computations are equally distributed
-in time rather that all at the end of the episode. And third, it can be applied to
-continuing problems rather than just episodic problems.
+## References
+[1] Sutton R S, Barto A G. Reinforcement learning: An introduction[M]. Cambridge: MIT press, 1998.
+
+[2] Mahmood A R, Yu H, White M, et al. Emphatic temporal-difference learning[J]. arXiv preprint arXiv:1507.01569, 2015.
+
+[3] Silver D, Online Course: Introduction to Reinforcement Learning, Lecture 4. ppt: page 30.
