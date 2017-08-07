@@ -1,7 +1,14 @@
-## Acknowledgement
-The template I use for my blog is forked from [this repopsitory]( https://github.com/minixalpha/StrayBirds).
+# Type Theme
 
-The author is grateful to  [minixalpha](https://github.com/minixalpha) and other contributors of this project.
+![Default Type Theme blog](https://cloud.githubusercontent.com/assets/816965/5142407/19742e48-71d6-11e4-8d9d-fdfe010784f0.png)
 
-Note that minixalpha also published a blog about [How to use Github and Jekyll to build your own blog](
-http://blog.csdn.net/on_1y/article/details/19259435).
+A free and open-source [Jekyll](http://jekyllrb.com) theme. Great for blogs and easy to customize.
+
+## Get Started
+
+[Demo](https://rohanchandra.github.io/type-theme/)
+
+[Using Type](https://rohanchandra.github.io/project/type/)
+
+## License
+The MIT License (MIT)

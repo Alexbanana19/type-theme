@@ -4,12 +4,12 @@ title: Understanding TD Learning
 ---
 *This post assumes redears have basic knowledge about Reinforcemnet Learning, including(but not limited to) MDP, MC method, Dynamic Programming and TD learning.*
 
-![header](../img/2017-07-27-TD-learning/header.png)
+![header]({{ site.baseurl }}/img/2017-07-27-TD-learning/header.png)
 
 
 
 ## Introduction
-**TD (temporal difference) Learning** is by far the most fascinating and successful Reinforcement Learning algorithm. It bridges the gap between the traditional **trial-error** methods and some advanced ideas like **Emphasis** and **Eligibility Traces**. However, the mechanism behind the scene have often been neglected since people tend to focus on the specific implementations of this idea, like **Sarsa** and **Q-Learning**. This blog post tends to explain the TD idea more intuitively. There are also many paper and surveys about TD Learning for further readings.(**here is the references**)
+**TD (temporal difference) Learning** is by far the most fascinating and successful Reinforcement Learning algorithm. It bridges the gap between the traditional trial-error methods and some advanced ideas like **Emphasis** and **Eligibility Traces**. However, the mechanism behind the scene have often been neglected since people tend to focus on the specific implementations of this idea, like **Sarsa** and **Q-Learning**. This blog post tends to explain the TD idea more intuitively. There are also many paper and surveys about TD Learning for further readings.(**here is the references**)
 
 ## Why TD Learning?
 For those who have basic knowledge of RL, **Dynamic Programming (DP)** and **Monte Carlo Learning (MC)**  should be no strangers. Dynamic Programming assumes the MDP of the environment is known and do bootstrapping to iteratively update its estimates.
