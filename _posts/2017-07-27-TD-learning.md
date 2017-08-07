@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Understanding TD Learning
+title:  TD Series (1)
 ---
-*This post assumes redears have basic knowledge about Reinforcemnet Learning, including(but not limited to) MDP, MC method, Dynamic Programming and TD learning.*
+# Understanding TD Learning
 
-![header]({{ site.baseurl }}/img/2017-07-27-TD-learning/header.png)
-
+<div align=center>
+<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning/header.png" width="4000" height="700" />
+</div>
 
 
 ## Introduction
