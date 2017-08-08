@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  TD Series (1)
+title:  TD Series (2)
 feature-img: "img/sample_feature_img.png"
 ---
 # Understading TD Learning II: Math
@@ -52,22 +52,22 @@ learning [1].
 The following two algorithms are methods that using TD Learing to do control, which involves another two concepts: General Policy Iteration and On/Off Policy Learning. Details will not be discussed here, but basically they are just iteratively refining their policies and state value to reach fixed point.
 
 <center>
-<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning-2/GPI.png" width="500" height="500" />
+<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning-2/GPI.png" width="300" height="300" />
 </center  >
 
-> <center><small>Figure 1: General Policy Iteration [1]</small></center>
+<center><small>Figure 1: General Policy Iteration [1]</small></center>
 
 ### Sarsa
 <center>
 <img src="{{ site.baseurl }}/img/2017-07-27-TD-learning-2/sarsa.png" width="1170" height="500" />
 </center>
 
-> <center> <small>Figure 2: Sarsa [1]</small></center>
+<center> <small>Figure 2: Sarsa [1]</small></center>
 
 ### Q-learning
 <img src="{{ site.baseurl }}/img/2017-07-27-TD-learning-2/q-learning.png" width="1500" height="500" />
 
-> <center><small>Figure 3: Q-Learning [1]</small></center>
+<center><small>Figure 3: Q-Learning [1]</small></center>
 
 ##Experiments
 Here's a cliff walking example from the book _Reinforcement Learning: An Introcduction_ to compare the two learning algorithm.
@@ -76,16 +76,16 @@ Here's a cliff walking example from the book _Reinforcement Learning: An Introcd
 <img src="{{ site.baseurl }}/img/2017-07-27-TD-learning-2/cliff-walking.png" width="1500" height="500" />
 </center>
 
-> <center><small>Figure 4: cliff walking [1]</small></center>
+<center><small>Figure 4: cliff walking [1]</small></center>
 
 You can also check out my [repo](https://github.com/Alexbanana19/Reinforcement-Learning-An-Introduction/blob/master/cliff_walking.ipynb) to see more implementation details.
 
 <center class = "half">
-<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning-2/exp1.png" width="700" height="500" />
-<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning-2/exp2.png" width="500" height="500" />
+<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning-2/exp1.png" width="500" height="400" />
+<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning-2/exp2.png" width="400" height="400" />
 </center>
 
-> <center><small>Figure 5: implementation and empirical results of cliff walking</small></center>
+<center><small>Figure 5: implementation and empirical results of cliff walking</small></center>
 
 
 ## References

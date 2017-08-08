@@ -11,9 +11,11 @@ feature-img: "img/sample_feature_img.png"
 ## What's TD Learning?
 To understand TD learning more intuitively, here's a classic example to illustrate how TD Learning works in our daily life.
 
-<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning/header.png" width="4000" height="500" />
+<center>
+<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning/header.png" width="1000" height="400" />
+</center>
 
-> <center> <small>Figure 1: driving home example by Monte Carlo methods
+<center> <small>Figure 1: driving home example by Monte Carlo methods
 (left) and TD methods (right).[1]</small></center>
 
 - Setting: We are driving home from work.
@@ -28,7 +30,9 @@ To understand TD learning more intuitively, here's a classic example to illustra
 
 As we can see, when we update the value of each state, MC method will have to wait till the end to do the update; it's like our original prediction to go home is 30 minutes, then we caught in a traffic jam on road at 6:00 p.m., but we don't change our estimate untill we get home at 8:00 p.m.. Not until then can we realize that getting caught in a traffic jam is not good.
 
-<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning/traffic.jpg" width="2000" height="700" />
+<center>
+<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning/traffic.jpg" width="1000" height="500" />
+</center>
 
 It may sound foolish but that's what MC method does. On the contrary, TD method is more "human-like": When we get caught in a traffic jam at 6:00 p.m., we will immediately realize that our original estimate (30 mins to go home) is too optimistic, because 6:00 p.m. is the evening rush hour and we will probably run into traffic jam. So we can update our state value right away rather than wait until we get home.
 
@@ -40,9 +44,11 @@ methods, TD methods can learn directly from raw experience; Also like Dynamic Pr
 
 In short, TD Learning is a combination of Monte Carlo Learning and Dynamic Programming.
 
-<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning/TD_structure.png" width="4000" height="500" />
+<center>
+<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning/TD_structure.png" width="1000" height="500" />
+</center>
 
-> <center> <small> Figure 2: TD Learning illustration: Sample and Bootstrap [3] </small> </center>
+<center> <small> Figure 2: TD Learning illustration: Sample and Bootstrap [3] </small> </center>
 
 ## How to implement TD Learning?
 Mathematical analysis and specific control algorithms, like Sarsa, Q-learing and expected Sarsa will be discussed in next post.
