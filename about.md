@@ -9,12 +9,8 @@ feature-img: "img/sample_feature_img_2.png"
  I am an undergraduate student in Information and Computing Science, School of Data and Computer Science, Sun Yat-Sen University, China. I am also working as a student research assistant with [Professor. Weishi Zheng](http://isee.sysu.edu.cn/~zhwshi/). My main interests are Deep Learning and Reinforcement Learning.
 
 ## Education
-- 2014.09 - Present, Bachelor of Information and Computing Science, School of Data and Computer Science, Sun Yat-Sen University, China.
-## Info
- I am an undergraduate student in Information and Computing Science, School of Data and Computer Science, Sun Yat-Sen University, China. I am also working as a student research assistant with [Professor. Weishi Zheng](http://isee.sysu.edu.cn/~zhwshi/). My main interests are Deep Learning and Reinforcement Learning.
-
-## Education
 - 2014.09 - Present, Bachelor of Information and Computing Science, School of Data and Computer
+
 ## Projects
 - [**Codes for Deep Reinforcement Learning Algorithms**](https://github.com/Alexbanana19/deep-reinforcement-learning)
 - [**Codes for Reinforcement Learning: An Introduction**](https://github.com/Alexbanana19/Reinforcement-Learning-An-Introduction)
