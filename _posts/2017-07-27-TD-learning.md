@@ -17,6 +17,7 @@ To understand TD learning more intuitively, here's a classic example to illustra
 
 <center> <small>Figure 1: driving home example by Monte Carlo methods
 (left) and TD methods (right).[1]</small></center>
+<br />
 
 - Setting: We are driving home from work.
 - Goal: Estimate how long it will take to get home.
@@ -33,11 +34,12 @@ As we can see, when we update the value of each state, MC method will have to wa
 <center>
 <img src="{{ site.baseurl }}/img/2017-07-27-TD-learning/traffic.jpg" width="1000" height="500" />
 </center>
+<br />
 
 It may sound foolish but that's what MC method does. On the contrary, TD method is more "human-like": When we get caught in a traffic jam at 6:00 p.m., we will immediately realize that our original estimate (30 mins to go home) is too optimistic, because 6:00 p.m. is the evening rush hour and we will probably run into traffic jam. So we can update our state value right away rather than wait until we get home.
 
 ## Why TD Learning?
-Now we know why it's named Temporal-Difference Learning: It uses the difference between time steps to update its estimate rather than use the actual return, which can only be acquire in the end.
+Now we know why it's named Temporal-Difference Learning: It uses the difference between time steps to update its estimate rather than use the actual return, which can only be acquired in the end.
 
 The example above explains the main idea of TD Learning: Sample and Bootstrap. Like Monte Carlo
 methods, TD methods can learn directly from raw experience; Also like Dynamic Programming, TD methods update estimates based in part on other learned estimates, without waiting for a final outcome.
@@ -49,9 +51,10 @@ In short, TD Learning is a combination of Monte Carlo Learning and Dynamic Progr
 </center>
 
 <center> <small> Figure 2: TD Learning illustration: Sample and Bootstrap [3] </small> </center>
+<br />
 
 ## How to implement TD Learning?
-Mathematical analysis and specific control algorithms, like Sarsa, Q-learing and expected Sarsa will be discussed in next post.
+Mathematical analysis and specific control algorithms, like Sarsa and Q-learing will be discussed in next post.
 
 ## References
 [1] Sutton R S, Barto A G. Reinforcement learning: An introduction[M]. Cambridge: MIT press, 1998.

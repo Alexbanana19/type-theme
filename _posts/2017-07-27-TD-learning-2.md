@@ -29,7 +29,7 @@ $$ V(S_{t}) :=  V(S_{t}) + \alpha [R_{t+1} + \gamma V(S_{t+1}) - V(S_{t})]$$
 
 where $$\alpha$$ is the learning rate parameter and $$\gamma$$ is the discounting factor. (There are also some [interesting discussion]() about $$\gamma$$.) Because we are bootstrapping, we use $$R_{t+1} + \gamma V(S_{t+1})$$ as target rather than the actual return $$G_{t}$$ to update $$V(S_{t})$$; Because we are sampling from an expectation, so we need to use a relatively small or decreasing $$\alpha$$ (Empirically, $$\frac{1}{n}$$ works fine).
 
-Note that $$R_{t+1} + \gamma V(S_{t+1})$$ is also known as _TD-error_, w.r.t $$\delta_t$$ [1], which is very essential and appears in many works in Reinforcement Learning. It has the following equivalence [1] with return $$G_t$$.
+Note that $$R_{t+1} + \gamma V(S_{t+1})-V(S_{t})$$ is also known as _TD-error_, w.r.t $$\delta_t$$ [1], which is very essential and appears in many works in Reinforcement Learning. It has the following equivalence [1] with return $$G_t$$.
 
 $$G_t - V_t$$
 
@@ -38,7 +38,7 @@ $$= R_{t+1} + \gamma G_{t+1} - V(S_t) + \gamma V(S_{t+1}) - \gamma V(S_{t+1})$$
 $$ = \delta_t + \gamma (G_{t+1} - V(S_{t+1}))$$
 
 $$ = \delta_t + \gamma \delta_{t+1} + \gamma^2 (G_{t+2} - V(S_{t+2})) $$
-
+Eligibility Traces II: TD(lamda) and Backward View
 $$ = ... $$
 
 $$ = \sum\limits_{k = t}^{T-1} \gamma^{k-t} \delta_{k} $$ (This sum is called _Monte Carlo error_)
@@ -59,13 +59,15 @@ The following two algorithms are methods that using TD Learing to do control, wh
 
 ### Sarsa
 <center>
-<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning-2/sarsa.png" width="1170" height="500" />
+<img src="{{ site.baseurl }}/img/2017-07-27-TD-learning-2/sarsa.png" width="1450" height="500" />
 </center>
 
 <center> <small>Figure 2: Sarsa [1]</small></center>
 
 ### Q-learning
+<center>
 <img src="{{ site.baseurl }}/img/2017-07-27-TD-learning-2/q-learning.png" width="1500" height="500" />
+</center>
 
 <center><small>Figure 3: Q-Learning [1]</small></center>
 
@@ -77,6 +79,7 @@ Here's a cliff walking example from the book _Reinforcement Learning: An Introcd
 </center>
 
 <center><small>Figure 4: cliff walking [1]</small></center>
+<br />
 
 You can also check out my [repo](https://github.com/Alexbanana19/Reinforcement-Learning-An-Introduction/blob/master/cliff_walking.ipynb) to see more implementation details.
 
