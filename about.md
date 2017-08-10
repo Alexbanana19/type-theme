@@ -14,7 +14,7 @@ feature-img: "img/sample_feature_img_2.png"
 ## Projects
 - [**Codes for Deep Reinforcement Learning Algorithms**](https://github.com/Alexbanana19/deep-reinforcement-learning)
 - [**Codes for Reinforcement Learning: An Introduction**](https://github.com/Alexbanana19/Reinforcement-Learning-An-Introduction)
-- [**Neural Architecture Search**](https://github.com/importsysu/Neural-Architecture-Search) (On-going)
+- [**Neural Explore**](https://github.com/importsysu/Neural-Architecture-Search) (On-going)
 
 
 ## Competitions and Awards
