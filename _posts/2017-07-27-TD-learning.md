@@ -2,6 +2,7 @@
 layout: post
 title:  TD Series (1)
 feature-img: "img/sample_feature_img.png"
+comments: true
 ---
 # Understading TD Learning I: Intuition
 

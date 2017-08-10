@@ -2,6 +2,7 @@
 layout: post
 title: TD Series (4)
 feature-img: "img/sample_feature_img.png"
+comments: true
 ---
 
 # Eligibility Traces II: TD(lamda) and Backward View

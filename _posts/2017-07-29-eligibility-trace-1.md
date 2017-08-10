@@ -2,6 +2,7 @@
 layout: post
 title: TD Series (3)
 feature-img: "img/sample_feature_img.png"
+comments: true
 ---
 
 # Eligibility Traces I: Lambda-Return and Forward View
