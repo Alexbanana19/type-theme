@@ -25,7 +25,7 @@ feature-img: "img/sample_feature_img_2.png"
 [Homeworks](https://github.com/Alexbanana19/Homework) and notes for the on-line courses that I have taken.
 
 ## Posts
-My [Blog](https://alexbanana19.github.io), including paper summaries and discussions of deep learning and reinforcement learning research field.
+My [Blog](https://alexbanana19.github.io), including paper summaries and discussions of deep learning and reinforcement learning algorithms.
 
 ## CV
 This section is far from completation...
