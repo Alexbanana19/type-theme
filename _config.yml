@@ -1,7 +1,6 @@
 # SITE CONFIGURATION
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://example.com" # the base hostname & protocol for your site
-
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
@@ -40,8 +39,8 @@ theme_settings:
   youtube:
 
   # Scripts
-  google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:
+  google_anal-ytics: # Tracking ID, e.g. "UA-000000-01"
+  disqus_shortname: "alexbananas-blog"
   muut_community_name: # From muut.com settings, e.g. "muttcommunityname"
   katex: true # Enable if using math markup
 
