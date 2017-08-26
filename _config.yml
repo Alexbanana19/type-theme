@@ -2,6 +2,11 @@
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://example.com" # the base hostname & protocol for your site
 # THEME-SPECIFIC CONFIGURATION
+
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+
 theme_settings:
   # Meta
   title: AlexBanana's Blog
@@ -17,12 +22,12 @@ theme_settings:
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
 
   # Icons
-  rss: false
+  rss: true
   email_address: "alexbanana19@gmail.com"
   behance:
   bitbucket:
   dribbble:
-  facebook:
+  facebook: "李明翰"
   flickr:
   github: "Alexbanana19"
   google_plus:
@@ -57,7 +62,7 @@ theme_settings:
   google_fonts: "Source+Sans+Pro:400,700,700italic,400italic"
 
   # Post navigation
-  post_navigation: false
+  post_navigation: true
 
 # PAGINATION
 paginate: 5
