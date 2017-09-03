@@ -1,4 +1,9 @@
-## "What is wrong with convolutional neural networks" by Geoffrey Hinton
+---
+layout: post
+title:  "What is wrong with convolutional neural networks" by Geoffrey Hinton
+feature-img: "img/sample_feature_img.png"
+comments: true
+---
 
 ## I Standard neural nets
 
@@ -140,5 +145,3 @@
     - convnet: in each pool, the ouput neuron only attends to the most active neuron in the pool.
 
     - better approach: send the information to the capsule in the layer above that is best at dealing  with it.(parse tree)
-
-    -
