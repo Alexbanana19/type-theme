@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Introduction to Deep Learning & Deep Belief Nets" by Geoffrey Hinton
+title:  Introduction to Deep Learning & Deep Belief Nets by Geoffrey Hinton
 feature-img: "img/sample_feature_img.png"
 comments: true
 ---
@@ -49,7 +49,7 @@ comments: true
 
 - adjust the weights to maximize the probability that a generative emodel would have produced the sensory input.
 
-- learn P(image) but not P(label | image)
+- learn P(image) but not P(label \| image)
 
 
 ## Belief nets

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Computational Principle that explains sex, brain and sparse coding" by Geoffrey Hinton
+title:  A Computational Principle that explains sex, brain and sparse coding by Geoffrey Hinton
 feature-img: "img/sample_feature_img.png"
 comments: true
 ---

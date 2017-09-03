@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Using Fast Weights to Store Temporary Memories" by Geoffrey Hinton
+title:  Using Fast Weights to Store Temporary Memories by Geoffrey Hinton
 feature-img: "img/sample_feature_img.png"
 comments: true
 ---

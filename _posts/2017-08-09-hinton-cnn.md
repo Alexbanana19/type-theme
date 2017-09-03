@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "What is wrong with convolutional neural networks" by Geoffrey Hinton
+title:  What is wrong with convolutional neural networks by Geoffrey Hinton
 feature-img: "img/sample_feature_img.png"
 comments: true
 ---
